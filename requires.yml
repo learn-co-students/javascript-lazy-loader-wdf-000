@@ -1,9 +1,9 @@
 # A list of javascript files required for the project, in dependency order
 javascripts:
   files:
-    - js/jquery.min.js
-    - js/cars.js
-    - js/click-handler.js
+    - public/js/jquery.min.js
+    - public/js/cars.js
+    - public/js/click-handler.js
   specs:
-    - spec/jasmine-jquery.js
-    - spec/cars-spec.js
+    - spec/01-jasmine/jasmine-jquery.js
+    - spec/01-jasmine/cars-spec.js

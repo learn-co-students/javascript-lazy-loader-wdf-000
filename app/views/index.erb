@@ -1,11 +1,8 @@
 <html>
   <head>
     <title>Cars</title>
-    <!-- bootstrap -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <!-- jquery -->
-    <script src="js/jquery.min.js"></script>
-    <!-- custom -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <script src="/js/jquery.min.js"></script>
   </head>
   <body>
     <div class="jumbotron">
@@ -17,17 +14,17 @@
       <div id="cars">
 
         <div class="row">
-          <div class="col-md-4">
+          <div class="col-md-4 car">
             <h2>Chevrolet</h2>
             <p><strong>Model:</strong> Tahoe</p>
             <p><strong>Year:</strong> 2012</p>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4 car">
             <h2>Toyota</h2>
             <p><strong>Model:</strong> Camry</p>
             <p><strong>Year:</strong> 2002</p>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4 car">
             <h2>Mercedes-Benz</h2>
             <p><strong>Model:</strong> E-Class</p>
             <p><strong>Year:</strong> 1998</p>
@@ -35,17 +32,17 @@
         </div><!-- row -->
 
         <div class="row">
-          <div class="col-md-4">
+          <div class="col-md-4 car">
             <h2>GMC</h2>
             <p><strong>Model:</strong> Acadia</p>
             <p><strong>Year:</strong> 2013</p>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4 car">
             <h2>Ford</h2>
             <p><strong>Model:</strong> Fusion</p>
             <p><strong>Year:</strong> 2011</p>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4 car">
             <h2>Chrysler</h2>
             <p><strong>Model:</strong> 300</p>
             <p><strong>Year:</strong> 2005</p>
@@ -63,6 +60,8 @@
           <button class="btn btn-success" id="load-cars">Load more cars</button>
         </div>
       </div><!-- row -->
+      <br>
+      <br>
     </div><!-- container -->
     <script src="js/cars.js"></script>
     <script src="js/click-handler.js"></script>
