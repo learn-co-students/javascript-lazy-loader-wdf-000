@@ -36,7 +36,7 @@ You could fix this by loading only the first thirty designs when the user clicks
 
 ## Objective
 
-You'll be using JavaScript to make a lazy loader. However, instead of the JavaScript adding elements to the page as the client scrolls down, it will add when the client clicks "View more".
+You'll be using JavaScript to make a lazy loader/infinite scroller for a car dealership. However, instead of JavaScript adding elements to the page as the client scrolls down, it will add new cars when the client clicks "View more cars".
 
 Right click on the link below and select "Save link as..." to see a video of how your `index.erb` should behave.
 
