@@ -1,5 +1,7 @@
 require_relative '../config/environment'
 require_relative '02-features/fixtures/spec_support'
+
+require 'capybara'
 require 'rack/test'
 
 include SpecSupport::Cars
