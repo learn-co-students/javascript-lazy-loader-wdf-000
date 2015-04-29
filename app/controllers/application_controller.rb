@@ -7,4 +7,8 @@ class ApplicationController < Sinatra::Base
     erb :'index'
   end
 
+  get '/example' do
+    erb :'netflix_example'
+  end
+
 end

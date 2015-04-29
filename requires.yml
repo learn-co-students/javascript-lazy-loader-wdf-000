@@ -6,4 +6,5 @@ javascripts:
     - public/js/click-handler.js
   specs:
     - spec/01-jasmine/jasmine-jquery.js
+    - spec/01-jasmine/support.js
     - spec/01-jasmine/cars-spec.js

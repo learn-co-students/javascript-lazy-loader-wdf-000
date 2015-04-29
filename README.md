@@ -44,11 +44,46 @@ Right click on the link below and select "Save link as..." to see a video of how
 
 ## jQuery's `ajax` function
 
-jQuery's [ajax](http://api.jquery.com/jquery.ajax/) funtion makes an asynchronous HTTP request. For this lab, you'll be making requests to [http://mimeocarlisting.azurewebsites.net/api/cars/](http://mimeocarlisting.azurewebsites.net/api/cars/). 
+jQuery's [ajax](http://api.jquery.com/jquery.ajax/) funtion makes an asynchronous HTTP request. 
+
+For instance, if I wanted to see what Netflix Stock Exchange, I could use the MarkIt API. The url for fetching a stock quote via MarkIt is `http://dev.markitondemand.com/Api/v2/Quote/jsonp?symbol=< stock symbol here>`. Netflix has a symbol of `NFLX`. Therefore, to get its quote info, you would visit [http://dev.markitondemand.com/Api/v2/Quote/jsonp?symbol=NFLX](http://dev.markitondemand.com/Api/v2/Quote/jsonp?symbol=NFLX). 
+
+Here's an example AJAX request that adds Netflix's last stock price to the div `#netflix-price`.
+
+```html
+<html>
+  <head>
+    <title>Netflix</title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <h1>Netflix Stock Price</h1>
+    <div id="netflix-price"><i class="fa fa-spinner fa-spin"></i> Fetching Data...</div>
+    <script>
+    
+      var url = "http://dev.markitondemand.com/Api/v2/Quote/jsonp?symbol=NFLX";
+
+      $.ajax({
+        url: url,
+        contentType: 'application/json',
+        dataType: 'jsonp',
+        success: function(data) {
+          var price = data["LastPrice"];
+          $("#netflix-price").html("$" + price);
+        }
+      });
+
+    </script>
+  </body>
+</html>
+```
+
+To see the above code in action, run `rackup` and visit [http://localhost:9292/example](http://localhost:9292/example).
 
 ## Car API
 
-This is an API that displays cars. It accepts two ending routes, the first of which is the page you're on (), the second is the number of cars you'd like to see. 
+For this lab, you'll be making requests to [http://mimeocarlisting.azurewebsites.net/api/cars/](http://mimeocarlisting.azurewebsites.net/api/cars/). This is an API that displays cars. It accepts two ending routes, the first of which is the page you're on while the second is the number of cars you'd like to see. 
 
 For instance, two view the first six cars, the url would be [http://mimeocarlisting.azurewebsites.net/api/cars/1/6](http://mimeocarlisting.azurewebsites.net/api/cars/1/6). To fetch the next six cars, the url would change to [http://mimeocarlisting.azurewebsites.net/api/cars/2/6](http://mimeocarlisting.azurewebsites.net/api/cars/2/6).
 
