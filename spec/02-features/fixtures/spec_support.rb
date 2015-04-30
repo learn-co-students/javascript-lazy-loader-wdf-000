@@ -61,6 +61,7 @@ module SpecSupport
       end_time = Time.now
       until end_time - start_time > 10
         return true if count_cars >= car_count + 3
+        sleep(0.001)
         end_time = Time.now
       end
       false
