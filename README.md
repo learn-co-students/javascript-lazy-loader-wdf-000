@@ -1,11 +1,13 @@
----
-language: JavaScript, js
-tags: selectors, jquery, ajax, json, api
-type: lab
-resources: 5
----
-
 # Lazy Loader
+
+## Objective
+
+You'll be using JavaScript to make a lazy loader/infinite scroller for a car dealership. However, instead of JavaScript adding elements to the page as the client scrolls down, it will add new cars when the client clicks "View more cars".
+
+Right click on the link below and select "Save link as..." to see a video of how your `index.erb` should behave.
+
+[lazy load vid](https://s3-us-west-2.amazonaws.com/web-dev-readme-photos/js/cars.mov)
+
 
 ![lounging dog](https://s3-us-west-2.amazonaws.com/web-dev-readme-photos/js/lounging-dog.jpg)
 
@@ -34,13 +36,6 @@ Lazy loading is a smart way to increase load times of pages. Let's say you work 
 
 You could fix this by loading only the first thirty designs when the user clicks "View All". Then, as they scroll towards the bottom of the page, you could add thirty new shirts to the page. You would then have the JavaScript repeat this process until all the designs have been loaded.
 
-## Objective
-
-You'll be using JavaScript to make a lazy loader/infinite scroller for a car dealership. However, instead of JavaScript adding elements to the page as the client scrolls down, it will add new cars when the client clicks "View more cars".
-
-Right click on the link below and select "Save link as..." to see a video of how your `index.erb` should behave.
-
-[lazy load vid](https://s3-us-west-2.amazonaws.com/web-dev-readme-photos/js/cars.mov)
 
 ## jQuery's `ajax` function
 
