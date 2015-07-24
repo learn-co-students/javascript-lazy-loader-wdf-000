@@ -1,10 +1,3 @@
----
-language: JavaScript, js
-tags: selectors, jquery, ajax, json, api
-type: lab
-resources: 5
----
-
 # Lazy Loader
 
 ![lounging dog](https://s3-us-west-2.amazonaws.com/web-dev-readme-photos/js/lounging-dog.jpg)
