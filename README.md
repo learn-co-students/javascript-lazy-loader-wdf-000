@@ -2,7 +2,7 @@
 
 ![lounging dog](https://s3-us-west-2.amazonaws.com/web-dev-readme-photos/js/lounging-dog.jpg)
 
-## Objective
+## Objectives
 
 - Use JavaScript to make a lazy loader/infinite scroller for a car dealership
 - Use Ajax to add the new content to the page without refreshing the page
