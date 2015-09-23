@@ -6,6 +6,7 @@ gem 'sinatra-activerecord', :require => 'sinatra/activerecord'
 gem 'rake'
 gem 'require_all'
 gem 'pry'
+gem 'shotgun'
 
 group :test do
   gem 'rspec'
