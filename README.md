@@ -101,4 +101,4 @@ This lab uses both Capybara and Jasmine tests. To run the Jasmine tests, type `l
 * [jQuery API - Selectors](http://api.jquery.com/category/selectors/)
 * [jQuery API - Events - Click](http://api.jquery.com/click/)
 
-<a href='https://learn.co/lessons/lazy-loader.js' data-visibility='hidden'>View this lesson on Learn.co</a>
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/lazy-loader.js' title='Lazy Loader'>Lazy Loader</a> on Learn.co and start learning to code for free.</p>
