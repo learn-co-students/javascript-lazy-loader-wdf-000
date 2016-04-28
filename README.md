@@ -26,7 +26,7 @@ You could fix this by loading only the first thirty designs when the user clicks
 
 jQuery's [ajax](http://api.jquery.com/jquery.ajax/) function makes an asynchronous HTTP request. 
 
-For instance, if I wanted to see the Netflix Stock Exchange, I could use the MarkIt API. The url for fetching a stock quote via MarkIt is `http://dev.markitondemand.com/Api/v2/Quote/jsonp?symbol=< stock symbol here>`. Netflix has a symbol of `NFLX`. Therefore, to get its quote info, you would visit [http://dev.markitondemand.com/Api/v2/Quote/jsonp?symbol=NFLX](http://dev.markitondemand.com/Api/v2/Quote/jsonp?symbol=NFLX). 
+For instance, if I wanted to see the Netflix's share price, I could use the MarkIt API. The url for fetching a stock quote via MarkIt is `http://dev.markitondemand.com/Api/v2/Quote/jsonp?symbol=< stock symbol here>`. Netflix has a symbol of `NFLX`. Therefore, to get its quote info, you would visit [http://dev.markitondemand.com/Api/v2/Quote/jsonp?symbol=NFLX](http://dev.markitondemand.com/Api/v2/Quote/jsonp?symbol=NFLX). 
 
 Here's an example AJAX request that adds Netflix's last stock price to the div `#netflix-price`.
 
@@ -104,3 +104,5 @@ This lab uses both Capybara and Jasmine tests. To run the Jasmine tests, type `l
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/lazy-loader.js' title='Lazy Loader'>Lazy Loader</a> on Learn.co and start learning to code for free.</p>
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/lazy-loader.js'>Lazy Loader Lab </a> on Learn.co and start learning to code for free.</p>
+
+<p class='util--hide'>View <a href='https://learn.co/lessons/lazy-loader.js'>Lazy Loader Lab </a> on Learn.co and start learning to code for free.</p>
