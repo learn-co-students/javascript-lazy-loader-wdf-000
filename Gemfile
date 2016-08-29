@@ -14,4 +14,5 @@ group :test do
   gem 'rack-test'
   gem 'launchy'
   gem 'selenium-webdriver'
+  gem 'poltergeist'
 end
