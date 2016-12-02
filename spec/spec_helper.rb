@@ -4,7 +4,8 @@ require_relative '02-features/fixtures/spec_support'
 Bundler.require(:default, :test)
 
 require 'capybara'
-require "capybara/rspec"
+require 'capybara/rspec'
+require 'capybara/poltergeist'
 require 'rack/test'
 
 include SpecSupport::Cars
@@ -20,5 +21,6 @@ def app
   Rack::Builder.parse_file('config.ru').first
 end
 
+Capybara.javascript_driver = :poltergeist
 Capybara.current_driver = Capybara.javascript_driver
 Capybara.app = app
