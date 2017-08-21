@@ -63,9 +63,9 @@ To see the above code in action, run `rackup` and visit [http://localhost:9292/e
 
 ## JSONP
 
-This lab uses `JSONP`. If you don't know what `JSONP` is, please read [Wikipedia - JSONP](https://en.wikipedia.org/wiki/JSONP) and [JSON versus JSONP Tutorial](http://json-jsonp-tutorial.craic.com/index.html).
+This lab uses `JSONP`. If you don't know what `JSONP` is, please read [Wikipedia - JSONP](https://en.wikipedia.org/wiki/JSONP) and [jQuery’s JSONP Explained with Examples](https://www.sitepoint.com/jsonp-examples/).
 
-**NOTE** `JSONP` requires a `callback` as part of the `URL`, this lab **does not**.
+***NOTE***: `JSONP` requires a `callback` as part of the `URL`; this lab **does not**.
 
 ## Car API
 
@@ -102,7 +102,3 @@ This lab uses both Capybara and Jasmine tests. To run the Jasmine tests, type `l
 * [jQuery API - Events - Click](http://api.jquery.com/click/)
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/lazy-loader.js' title='Lazy Loader'>Lazy Loader</a> on Learn.co and start learning to code for free.</p>
-
-<p data-visibility='hidden'>View <a href='https://learn.co/lessons/lazy-loader.js'>Lazy Loader Lab </a> on Learn.co and start learning to code for free.</p>
-
-<p class='util--hide'>View <a href='https://learn.co/lessons/lazy-loader.js'>Lazy Loader Lab </a> on Learn.co and start learning to code for free.</p>
